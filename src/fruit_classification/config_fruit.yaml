@@ -1,0 +1,34 @@
+# Transformer architecture specification
+
+use_gpu: 1 
+num_workers: 4
+batch_size: 6
+lr: 5e-5
+# Change these directories to your local dataset
+Train_data_dir: /home/yhan364/new_upload/
+Fruit_type: ['apple', 'lemon', 'orange', 'plum', 'tomato']
+label_encoding : {'apple':'0', 'lemon':'1', 'orange':'2', 'plum':'3', 'tomato':'4'}
+Tactile_Image_width: 200  # Raw Image width (for slip detection dataset)
+Tactile_Image_height: 150 # Raw Image Height (for slip detection dataset)
+Tactile_scale_ratio: 1
+Visual_Image_width: 640
+Visual_Image_height: 480
+Visual_scale_ratio: 0.25  #Raw image size (480, 640) -> resized image (480 * scale_ratio, 640 * scale_ratio)
+#scale_ratio: 0.25  #Raw image size (480, 640) -> resized image (480 * scale_ratio, 640 * scale_ratio)
+video_length: 8
+# Model options: swin_transformer, vivit, basic_CNN, to be added more
+Model_name: timeSformer_orig_two_fruit # place with your model name
+# other option: vivit_fdp_two_fruit
+Modality: Combined # For grasping framwork, we only used Combined
+attn_drop: 0.0  # used for timeSformer_orig_two_fruit & vivit_fdp_two_fruit
+mlp_drop: 0.0 # used for timeSformer_orig_two_fruit & vivit_fdp_two_fruit
+epochs: 250
+print_interval: 1
+save_dir: ./Trained_Model
+use_random_seed: 1  #Set to 1 to use random seed. Otherwise, seed below is used for reproducibility
+seed: 42 #Only used if use_random_seed = 1
+skip_init_in_train: 1
+test_eval: 1
+pretrained: 1
+# Specify the pre-trained model path
+pretrained_path: /home/yhan364/AttentionModel4FruitPicking/Model/Codes/Grasping_framework/Trained_Model/timeSformer_orig_two/23_11_2021__10_41_42/timeSformer_orig_two236.pt

@@ -1,0 +1,36 @@
+# Transformer architecture specification
+
+use_gpu: 1 
+num_workers: 4
+batch_size: 6
+lr: 5e-5
+# Change these directories to your local datase, as mentioned in our paper, we have 5 splits
+Train_data_dir: /home/yhan364/Whole Dataset/split5/training  
+Valid_data_dir: /home/yhan364/Whole Dataset/split5/validation
+Test_data_dir: /home/yhan364/Whole Dataset/split5/testing
+Image_width: 640  # Raw Image width (for slip detection dataset)
+Image_height: 480 # Raw Image Height (for slip detection dataset)
+scale_ratio: 0.25  #Raw image size (480, 640) -> resized image (480 * scale_ratio, 640 * scale_ratio)
+video_length: 14
+# Model options: swin_transformer, vivit, basic_CNN, to be added more
+Model_name: vivit_fdp  # place with your model name
+Modality: Visual # Three options, Combined, Tactile, Visual
+# When select Tactile & Visual, make sure Model_name does not contain "two"
+# other options: basic_CNN, timeSformer_orig, vivit_fdp...
+# vivit_fdp for two modalities: vivit_fdp_two
+# timeSformer_orig for two modalities: timeSformer_orig_two
+base_network: resnet18 # only used for the basic_CNN architecture, there are some other options
+# vgg_19; inception_v3; alexnet(debug)
+attn_drop: 0.00  # used for timeSformer_orig* & vivit_FDP*
+mlp_drop: 0.00 # used for timeSformer_orig* & vivit_FDP*
+CNN_drop: 0.20 # used for basic_CNN
+LSTM_drop: 0.20 # used for basic_CNN
+pretrained: False  # used for basic_CNN, load pretrained model or not.
+frozen_weights: False # used for basic_CNN, CNN parameters are trainable or not
+epochs: 250
+print_interval: 1
+save_dir: ./Trained_Model
+use_random_seed: 1  #Set to 1 to use random seed. Otherwise, seed below is used for reproducibility
+seed: 42 #Only used if use_random_seed = 1
+skip_init_in_train: 1 # timeSFormer does not require to explicitly init weights
+test_eval: 1
