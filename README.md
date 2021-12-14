@@ -1,14 +1,16 @@
 # Deformable Objects Grasping
 
-This repository contains code and data associated with paper *"Learning Generalizable Vision-Tactile Robotic Grasping Strategy for Deformable Objects via Transformer"*. Our paper link is: , and if you are interested in our work and would like to cite our paper, please use the following citation format:
+This repository contains code and data associated with paper *"Learning Generalizable Vision-Tactile Robotic Grasping Strategy for Deformable Objects via Transformer"*. Our paper link is: https://arxiv.org/abs/2112.06374 , and if you are interested in our work and would like to cite our paper, please use the following citation format:
 
 ### BibTex
 ```
-@misc{Han2021TransGrasping,
-  author = {Yunhai Han, Rahul Batra, Nathan Boyd, Tuo Zhao, Yu She, Seth Hutchinson, and Ye Zhao},
-  title = {Learning Generalizable Vision-Tactile Robotic Grasping Strategy for Deformable Objects via Transformer},
-  year = {2021},
-  journal = {arxiv}
+@misc{Han2021Grasping,
+      title={Learning Generalizable Vision-Tactile Robotic Grasping Strategy for Deformable Objects via Transformer}, 
+      author={Yunhai Han and Rahul Batra and Nathan Boyd and Tuo Zhao and Yu She and Seth Hutchinson and Ye Zhao},
+      year={2021},
+      eprint={2112.06374},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
 }
 ```
 ***
