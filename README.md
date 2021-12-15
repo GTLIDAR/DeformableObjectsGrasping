@@ -103,6 +103,11 @@ Pinching Gelsight | Pinching Camera | Sliding Gelsight | Sliding Camera
 
 
 ***
+#### Online Fruit Grasping
+
+#### Online Fruit Picking
+We also test the fruit classification model on the seen fruits during online deployments, which enables the robot to place each fruit into separate bins.
+[![Online Furit Picking](https://youtu.be/36AVu_ipGDI/0.jpg)](https://youtu.be/36AVu_ipGDI)
 
 ## Requirements
     * python3 >= 3.8.10                 
