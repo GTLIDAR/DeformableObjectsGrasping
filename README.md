@@ -106,7 +106,7 @@ Pinching Gelsight | Pinching Camera | Sliding Gelsight | Sliding Camera
 #### Online Fruit Grasping
 The trained frameworks are then deployed online on the robot manipulator to estimate the safe grasping force for both seen and unseen fruits during training.
 
-![alt text](data_example/fruit_grasping/lemon.gif     "Gelsight frame" )|![alt text](data_example/fruit_grasping/apple.gif    "Realsense frame" )|![alt text](data_example/fruit_grasping/orange.gif      "Gelsight frame" )|![alt text](data_example/fruit_grasping/plum.gif     "Realsense frame" )|![alt text](data_example/fruit_grasping/tomato.gif      "Gelsight frame" )|![alt text](data_example/fruit_grasping/kiwi.gif     "Realsense frame" )
+![alt text](data_example/fruit_grasping/lemon.gif     "lemon" )|![alt text](data_example/fruit_grasping/apple.gif    "apple" )|![alt text](data_example/fruit_grasping/orange.gif      "orange" )|![alt text](data_example/fruit_grasping/plum.gif     "plum" )|![alt text](data_example/fruit_grasping/tomato.gif      "tomato" )|![alt text](data_example/fruit_grasping/kiwi.gif     "kiwifruit" )
 :--:|:--:|:--:|:--:|:--:|:--:
 Lemon | Apple | Orange | Plum | Tomato | Kiwifruit (unseen)
 
