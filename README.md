@@ -14,7 +14,7 @@ This repository contains code and data associated with paper *"Learning Generali
 }
 ```
 ***
-
+The supplementary video can be found at: https://www.youtube.com/watch?v=W7o8DsTivTk.
 ## Tasks
 1) Slip Detection  
 Work done as part of the paper "Slip Detection with Combined Tactile and Vision Information". They collected the slip dataset and trained a CNN+LSTM model to detect slip. We showed that the Transformer models outperform the CNN+LSTM model  in term of accuracy and efficiency. 
