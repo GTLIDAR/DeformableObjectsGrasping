@@ -1,6 +1,6 @@
 # Deformable Objects Grasping
 
-This repository contains code and data associated with paper *"Learning Generalizable Vision-Tactile Robotic Grasping Strategy for Deformable Objects via Transformer"*. Our paper link is: https://arxiv.org/abs/2112.06374 , and if you are interested in our work and would like to cite our paper, please use the following citation format:
+This repository contains code and data associated with paper *"Learning Generalizable Vision-Tactile Robotic Grasping Strategy for Deformable Objects via Transformer"*. Our paper link is: , and if you are interested in our work and would like to cite our paper, please use the following citation format:
 
 ### BibTex
 ```
@@ -14,7 +14,7 @@ This repository contains code and data associated with paper *"Learning Generali
 }
 ```
 ***
-The supplementary video can be found at: https://www.youtube.com/watch?v=W7o8DsTivTk.
+
 ## Tasks
 1) Slip Detection  
 Work done as part of the paper "Slip Detection with Combined Tactile and Vision Information". They collected the slip dataset and trained a CNN+LSTM model to detect slip. We showed that the Transformer models outperform the CNN+LSTM model  in term of accuracy and efficiency. 
@@ -36,7 +36,7 @@ Original work done as part of our paper. Our framework can also classify the gra
 There are two datasets 1) Slip Detection Dataset and 2) Grasping Dataset
 
 ### 1. Slip Detection Dataset
-Download the whole dataset from: https://www.dropbox.com/sh/i39pjxfqiwhbu1n/AAD5FNjk-Nt28UZ8lsVuVd4ja?dl=0. 
+Download the whole dataset from: https://drive.google.com/file/d/1_iTPxl8TENznXVh-82I26kW9qXrsNsv-/view. 
 
 Slip Dataset consists of video frames captured by Gelsight Tactile sensor and Realsense Camera both mounted on a robotic arm(which arm). Robot arm action is labelled either slipping or not slipping. Dataset consists of 89 everyday objects like bottles, torch, etc. Besides, as described in our paper, we randomly split the whole dataset into training, validation, test sub-dataset five times.
 
@@ -67,7 +67,7 @@ Gelsight | Camera
 
 
 ### 2. Fruit Grasping Dataset
-Download data from: https://www.dropbox.com/s/1eb3ufrr0gryxu8/FruitData.zip?dl=0.
+Download data from: https://drive.google.com/file/d/144cLi-LkPZVHD_JHfJSC8mYAk6gISCNI/view.
 
 Dataset consists of video frames captured by Gelsight Tactile sensor and Realsense Camera both mounted on a robotic arm(which arm). Robotic arm performs two actions pinching and sliding and frameset are captured for both actions for different fruits. For each frameset a fruit label is also provided. Dataset has 6 categories of fruits. Check more details in the whole dataset.
 
@@ -103,16 +103,6 @@ Pinching Gelsight | Pinching Camera | Sliding Gelsight | Sliding Camera
 
 
 ***
-#### Online Fruit Grasping
-The trained frameworks are then deployed online on the robot manipulator to estimate the safe grasping force for both seen and unseen fruits during training.
-
-![alt text](data_example/fruit_grasping/lemon.gif     "lemon" )|![alt text](data_example/fruit_grasping/apple.gif    "apple" )|![alt text](data_example/fruit_grasping/orange.gif      "orange" )|![alt text](data_example/fruit_grasping/plum.gif     "plum" )|![alt text](data_example/fruit_grasping/tomato.gif      "tomato" )|![alt text](data_example/fruit_grasping/kiwi.gif     "kiwifruit" )
-:--:|:--:|:--:|:--:|:--:|:--:
-Lemon | Apple | Orange | Plum | Tomato | Kiwifruit (unseen)
-
-#### Online Fruit Picking
-We also test the fruit classification model on the seen fruits during online deployments, which enables the robot to place each fruit into separate bins. The video can be found below.
-[![](https://img.youtube.com/vi/36AVu_ipGDI/0.jpg)](https://www.youtube.com/watch?v=36AVu_ipGDI "Click on to play the video")
 
 ## Requirements
     * python3 >= 3.8.10                 
