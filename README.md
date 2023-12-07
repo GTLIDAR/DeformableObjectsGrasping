@@ -36,7 +36,7 @@ Original work done as part of our paper. Our framework can also classify the gra
 There are two datasets 1) Slip Detection Dataset and 2) Grasping Dataset
 
 ### 1. Slip Detection Dataset
-Download the whole dataset from: https://drive.google.com/file/d/1_iTPxl8TENznXVh-82I26kW9qXrsNsv-/view. 
+Download the whole dataset from: <del>https://drive.google.com/file/d/1_iTPxl8TENznXVh-82I26kW9qXrsNsv-/view</del>.  Due to some legacy reason, we only maintain a small clip of the dataset, which is not enough for training a new model. The link to this part of data is https://drive.google.com/file/d/1NPcZYStp2pLPyeWLwv3-jbltz04RUuSp/view?usp=drive_link.
 
 Slip Dataset consists of video frames captured by Gelsight Tactile sensor and Realsense Camera both mounted on a robotic arm(which arm). Robot arm action is labelled either slipping or not slipping. Dataset consists of 89 everyday objects like bottles, torch, etc. Besides, as described in our paper, we randomly split the whole dataset into training, validation, test sub-dataset five times.
 
@@ -67,7 +67,7 @@ Gelsight | Camera
 
 
 ### 2. Fruit Grasping Dataset
-Download data from: https://drive.google.com/file/d/144cLi-LkPZVHD_JHfJSC8mYAk6gISCNI/view.
+Download data from: <del>https://drive.google.com/file/d/144cLi-LkPZVHD_JHfJSC8mYAk6gISCNI/view</del> https://drive.google.com/file/d/1qBGmeEmLYGI4gPBAbp3y8d3_Yl4u01RH/view?usp=drive_link.
 
 Dataset consists of video frames captured by Gelsight Tactile sensor and Realsense Camera both mounted on a robotic arm(which arm). Robotic arm performs two actions pinching and sliding and frameset are captured for both actions for different fruits. For each frameset a fruit label is also provided. Dataset has 6 categories of fruits. Check more details in the whole dataset.
 
